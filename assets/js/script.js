@@ -25,6 +25,7 @@ $(document).ready(function() {
 
     // event listener and set storage items
     $('.saveBtn').on('click', function() {
+        // event.preventDefault();
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr('id');
         localStorage.setItem(time, text);
